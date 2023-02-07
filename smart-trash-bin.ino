@@ -69,7 +69,7 @@ void check_for_incoming_trash() {
         counter++;
         Serial.print("i=");
         Serial.println(counter);
-        if (counter == 5) {
+        if (counter == 10) {
           break;
         }
       } else {
@@ -131,7 +131,7 @@ void bin_full() {
   green_led_off();
   uv_on();
   blue_led_on();
-  delay(10000);
+  delay(30000);
   uv_off();
   blue_led_off();
   red_led_on();
